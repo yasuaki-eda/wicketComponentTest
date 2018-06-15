@@ -8,6 +8,7 @@ import com.edans.dropdown.DropDownPage;
 import com.edans.dropdown.DropDownPage2;
 import com.edans.dropdown.DropDownPage3;
 import com.edans.radio.RadioPage;
+import com.edans.radio.RadioPage2;
 
 public class HomePage extends WebPage {
 	private static final long serialVersionUID = 1L;
@@ -48,6 +49,14 @@ public class HomePage extends WebPage {
 			@Override
 			public void onClick() {
 				setResponsePage(RadioPage.class);
+			}
+		});
+
+		add(new Link<Void>("radioPage2") {
+
+			@Override
+			public void onClick() {
+				setResponsePage(RadioPage2.class);
 			}
 		});
 	}
